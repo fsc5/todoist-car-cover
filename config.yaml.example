@@ -1,0 +1,14 @@
+log_folder: ./logs/
+log_base_name: log_
+
+todoist_key: INSERT TODOIST API KEY 
+project_id : INSERT PROJECT ID
+section_id : INSERT SECTION ID
+task_content: cover the car!
+
+openweather_key: INSERT OPEN WEATHER KEY
+#you can use https://www.latlong.net/ for that keep format eg. 4.44
+latitude: INSERT LAT
+longitude: INSERT LON
+
+checking_time: "16:00"
