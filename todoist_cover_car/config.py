@@ -1,19 +1,21 @@
+from datetime import datetime
 import yaml
 
+
 class Config:
-    todoist_key:str
-    project_id:int
-    section_id:int
-    task_content:str
-    openweather_key:str
-    latitude:str
-    longitude:str
-    checking_time:str
-    log_folder:str
-    log_base_name:str
+    todoist_key: str
+    project_id: int
+    section_id: int
+    task_content: str
+    openweather_key: str
+    latitude: str
+    longitude: str
+    checking_time: str
+    log_folder: str
+    log_base_name: str
+    wake_up_time: datetime
 
-
-    def load(self,path:str):
+    def load(self, path: str):
         config = yaml.safe_load(open(path))
         self.todoist_key = config["todoist_key"]
         self.project_id = config["project_id"]
@@ -25,3 +27,4 @@ class Config:
         self.checking_time = config["checking_time"]
         self.log_folder = config["log_folder"]
         self.log_base_name = config["log_base_name"]
+        self.wake_up_time = datetime.strptime(config["wake_up_time"], "%H:%M")

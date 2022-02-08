@@ -12,3 +12,4 @@ latitude: INSERT LAT
 longitude: INSERT LON
 
 checking_time: "16:00"
+wake_up_time: "7:00"

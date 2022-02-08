@@ -6,11 +6,12 @@ authors = ["fsc5"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 todoist-api-python = "^1.1.0"
 schedule = "^1.1.0"
 PyYAML = "^6.0"
 attrs = "^21.4.0"
+requests = "^2.27.1"
 
 [tool.poetry.dev-dependencies]
 
